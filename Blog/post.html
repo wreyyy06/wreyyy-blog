@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>All Posts | VirtualVerse</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+       <style>
+            /* Uniform size for post images */
+            .small-container .row .col-4 img {
+                width: 100%;
+                height: 200px; /* Adjust as needed */
+                object-fit: cover;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    
+                </div>
+               <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                         <li><a href="videos.html">Videos</a></li>
+                         <li><a href="post.html">Articles</a></li>
+                         <li><a href="account.html">Account</a></li>
+
+                        
+                    </ul>
+                </nav>
+              
+            </div>
+           
+        </div>
+    <!--</div>-->
+    
+        
+        <!------------------------------ Products------------------------------>
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Posts</h2>
+                <select>
+                    <option>Default sorting</option>
+                </select>
+            </div>
+            
+            
+            <!--<h2 class="title" >Featured Products</h2>-->
+            <div class="row">
+                    <div class="col-4">
+                        <a href="post1.html"><img src="images/image1.jpg"></a>
+                        <a href="post1.html"><h4>Top 10 most innovative companies in AR/VR of 2023</h4></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="post2.html"><img src="images/image2.jpg"></a>
+                        <a href="post2.html"><h4>What is Augmented Reality? Anything you need to know...</h4>
+                    </div>
+                    <div class="col-4">
+                        <a href="post3.html"><img src="images/image3.jpg"></a>
+                        <a href="post3.html"><h4>What is Virtual Reality? Anything you need to know...</h4>
+                    </div>
+                    <div class="col-4">
+                        <a href="post4.html"><img src="images/image4.jpg"></a>
+                        <a href="post4.html"><h4>The history of Virtual Reality and Augmented Reality.</h4>
+                    </div>  
+                </div>
+            
+            <!-------------- new row----------------->
+        </div>
+        <!----------------------------------footer------------------------------------->
+        <div class ="footer">
+        <div class="container">
+            
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                   
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                   <ul>
+                       <li>Coupons</li>
+                       <li>Blog Post</li>
+                       <li>Return Policy</li>
+                       <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                   <ul>
+                       <li>Facebook (@VirtualVerse)</li>
+                       <li>Instagram (@VirtualVerse)</li>
+                       <li>Youtube (VirtualVerse)</li>
+                       <li>09106437697</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+           
+        </div>
+    </div>
+        
+        
+        <!-----------------------------------js for toggle menu----------------------------------------------->
+        <script>
+            var menuItems=document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight="0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight="200px";
+                }
+                else{
+                    MenuItems.style.maxHeight="0px";
+                }
+            }
+        </script>
+    </body>
+</html>
